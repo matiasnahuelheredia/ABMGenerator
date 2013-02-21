@@ -1,18 +1,16 @@
-package org.ABMGenerator.Repositorio;/*Paquete Repositorio*/
+
+package org.ABMGenerator.Repositorio;
 import java.util.ArrayList;
-import java.util.List;
 import org.ABMGenerator.Dominio.Alumno;
-public class RepoAlumno/*Clase*/ {
+public class RepoAlumno {
 
 	public ArrayList<Alumno> getAll()
 	{
-		ArrayList</*clase*/Alumno> listaAlumno = new ArrayList<Alumno/*clase*/>();
-		/*clase*/Alumno miAlumno = new /*clase*/Alumno();
+		ArrayList<Alumno> listaAlumno = new ArrayList<Alumno>();
+		Alumno miAlumno = new Alumno();
         /*asignar obtener getters y setters*/
-		miAlumno/*clase*/.setApellido("Matias");
-		miAlumno/*clase*/.setLegajo(1);
-		miAlumno/*clase*/.setApellido("Heredia");
-		listaAlumno.add(miAlumno/*clase*/);
+		
+		listaAlumno.add(miAlumno);
 		return listaAlumno;
 	}
 

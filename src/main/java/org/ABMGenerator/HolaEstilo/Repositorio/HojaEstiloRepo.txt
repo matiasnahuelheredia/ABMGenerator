@@ -1,17 +1,17 @@
-package /*Paquete Repositorio*/;
+package <remplazar>PaqueteRepositorio</remplazar>;
 import java.util.ArrayList;
 import java.util.List;
-import /*Paquete Dominio*//*clase*/;
-public class Repo/*clase*/ {
+import <remplazar>PaqueteDominio</remplazar>.<remplazar>Clase</remplazar>;
+public class Repo<remplazar>Clase</remplazar> {
 
-	public ArrayList</*clase*/> getAll()
+	public ArrayList<<remplazar>Clase</remplazar>> getAll()
 	{
-		ArrayList</*clase*/> lista/*clase*/ = new ArrayList</*clase*/>();
-		/*clase*/ mi/*clase*/ = new /*clase*/();
+		ArrayList<<remplazar>Clase</remplazar>> lista<remplazar>Clase</remplazar> = new ArrayList<<remplazar>Clase</remplazar>>();
+		<remplazar>Clase</remplazar> mi<remplazar>Clase</remplazar> = new <remplazar>Clase</remplazar>();
         /*asignar obtener getters y setters*/
 		
-		listaAlumno.add(mi/*clase*/);
-		return lista/*clase*/;
+		listaAlumno.add(mi<remplazar>Clase</remplazar>);
+		return lista<remplazar>Clase</remplazar>;
 	}
 
 	

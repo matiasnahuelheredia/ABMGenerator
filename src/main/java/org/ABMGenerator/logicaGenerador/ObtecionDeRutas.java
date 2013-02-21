@@ -35,4 +35,11 @@ public class ObtecionDeRutas {
 	{
 		return obtenerRutaPackagePrincipal()+".Servicio";
 	}
+	
+	public static String obtenerRutaPackageHojaEstiloRepositorio()
+	{
+		
+
+		return "/home/mati89/workspace/ABMGenerator/src/main/java/org/ABMGenerator/HolaEstilo/Repositorio/";
+	}
 }
