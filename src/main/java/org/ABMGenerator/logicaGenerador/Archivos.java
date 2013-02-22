@@ -26,5 +26,18 @@ public class Archivos {
       }
 	  
       
+      public static String[] obtenerArchivosDominio()
+      {
+    	  File miDir = new File ("/home/mati89/workspace/ABMGenerator/src/main/java/org/ABMGenerator/Dominio/");
+          
+			
+			String[] Archivos =miDir.list();
+			for (int i=0;i<Archivos.length;i++)
+			{
+				Archivos[i]=Archivos[i].replaceAll(".java", "");
+			}
+			return Archivos;
+      }
+      
 	
 }

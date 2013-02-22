@@ -1,5 +1,7 @@
 package org.ABMGenerator.logicaGenerador;
 
+import java.io.File;
+import java.io.IOException;
 import java.lang.reflect.Method;
 
 
@@ -7,10 +9,10 @@ import java.lang.reflect.Method;
 public class GeneradorRepositorio {
 
 	
-	public static String generarCodigo() throws ClassNotFoundException
+	public static String generarCodigo(String nombreClase) throws ClassNotFoundException
 	{
 		String Codigo = Archivos.verHojaEstiloDominio();
-		String nombreClase = "Perro";
+		
 		Codigo = Codigo.replaceAll("<remplazar>PaqueteRepositorio</remplazar>", ObtecionDeRutas.obtenerRutaPackageRepositorio() );
 		Codigo = Codigo.replaceAll("<remplazar>PaqueteDominio</remplazar>", ObtecionDeRutas.obtenerRutaPackageDominio() );
 		Codigo = Codigo.replaceAll("<remplazar>Clase</remplazar>", nombreClase );
@@ -35,4 +37,16 @@ public class GeneradorRepositorio {
 		return salida;
 		
 	}
+	
+	public static void GenerarArchivoPuntoJava() throws Exception
+	{
+	     String[] listaNombreArchivos = Archivos.obtenerArchivosDominio();
+               for (int i=0;i<listaNombreArchivos.length;i++)
+               {
+            	   String codigo = generarCodigo(listaNombreArchivos[i]);
+            	   System.out.println(codigo);
+               }
+	}
+	
+	
 }

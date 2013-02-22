@@ -1,10 +1,7 @@
 package org.ABMGenerator;
 
-import org.ABMGenerator.logicaGenerador.Archivos;
-import org.ABMGenerator.logicaGenerador.GeneradorDominio;
 import org.ABMGenerator.logicaGenerador.GeneradorRepositorio;
-import org.ABMGenerator.logicaGenerador.ObtecionDeRutas;
-import org.ABMGenerator.logicaGenerador.ReemplazoDeCodigo;
+
 
 /**
  * Hello world!
@@ -12,8 +9,9 @@ import org.ABMGenerator.logicaGenerador.ReemplazoDeCodigo;
  */
 public class App 
 {
-    public static void main( String[] args ) throws ClassNotFoundException
+    public static void main( String[] args ) throws Exception
     {
-        System.out.println(GeneradorRepositorio.generarCodigo());
+
+        GeneradorRepositorio.GenerarArchivoPuntoJava();
     }
 }
