@@ -25,11 +25,6 @@ public class Archivos {
     	  return retorno;
       }
 	  
-      public static String asignarGetters()
-      {
-    	  
-		return null;
-    	  
-      }
+      
 	
 }

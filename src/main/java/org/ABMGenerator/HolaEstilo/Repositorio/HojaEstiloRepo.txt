@@ -8,7 +8,7 @@ public class Repo<remplazar>Clase</remplazar> {
 	{
 		ArrayList<<remplazar>Clase</remplazar>> lista<remplazar>Clase</remplazar> = new ArrayList<<remplazar>Clase</remplazar>>();
 		<remplazar>Clase</remplazar> mi<remplazar>Clase</remplazar> = new <remplazar>Clase</remplazar>();
-        /*asignar obtener getters y setters*/
+                 <remplazar>AsignarSetters</remplazar>;
 		
 		listaAlumno.add(mi<remplazar>Clase</remplazar>);
 		return lista<remplazar>Clase</remplazar>;

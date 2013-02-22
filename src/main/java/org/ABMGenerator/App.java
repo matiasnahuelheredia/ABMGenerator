@@ -12,7 +12,7 @@ import org.ABMGenerator.logicaGenerador.ReemplazoDeCodigo;
  */
 public class App 
 {
-    public static void main( String[] args )
+    public static void main( String[] args ) throws ClassNotFoundException
     {
         System.out.println(GeneradorRepositorio.generarCodigo());
     }
