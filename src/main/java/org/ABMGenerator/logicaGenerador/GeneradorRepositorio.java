@@ -45,6 +45,7 @@ public class GeneradorRepositorio {
                {
             	   String codigo = generarCodigo(listaNombreArchivos[i]);
             	   System.out.println(codigo);
+            	   
                }
 	}
 	
