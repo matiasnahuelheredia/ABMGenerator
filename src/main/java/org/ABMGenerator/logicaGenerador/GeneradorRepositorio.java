@@ -1,7 +1,7 @@
 package org.ABMGenerator.logicaGenerador;
 
-import java.io.File;
-import java.io.IOException;
+
+
 import java.lang.reflect.Method;
 
 
@@ -23,7 +23,7 @@ public class GeneradorRepositorio {
 
 	public static String generarAsignarGetters(String nombreDeClase) throws ClassNotFoundException 
 	{
-		Class clazz = Class.forName(ObtecionDeRutas.obtenerRutaPackageDominio()+"."+nombreDeClase);
+		Class<?> clazz = Class.forName(ObtecionDeRutas.obtenerRutaPackageDominio()+"."+nombreDeClase);
 		Method metodos[] = clazz.getMethods();
 		String salida="";
 		for (int i=0;i<metodos.length;i++)
