@@ -1,0 +1,36 @@
+package <remplazar>PaqueteRepositorio</remplazar>;
+import java.util.ArrayList;
+import <remplazar>PaqueteDominio</remplazar>.<remplazar>Clase</remplazar>;
+public class Repo<remplazar>Clase</remplazar> {
+
+	public ArrayList<<remplazar>Clase</remplazar>> getAll()
+	{
+		ArrayList<<remplazar>Clase</remplazar>> lista<remplazar>Clase</remplazar> = new ArrayList<<remplazar>Clase</remplazar>>();
+		<remplazar>Clase</remplazar> mi<remplazar>Clase</remplazar> = new <remplazar>Clase</remplazar>();
+                 <remplazar>AsignarSetters</remplazar>
+		
+		lista<remplazar>Clase</remplazar>.add(mi<remplazar>Clase</remplazar>);
+		return lista<remplazar>Clase</remplazar>;
+	}
+
+	public <remplazar>Clase</remplazar> getById(<remplazar>Clase</remplazar> entrada<remplazar>Clase</remplazar>)
+	{
+		
+		return entrada<remplazar>Clase</remplazar>;
+	}
+
+	public void baja(<remplazar>Clase</remplazar> entrada<remplazar>Clase</remplazar>)
+	{
+		
+	}
+	
+	public void alta(<remplazar>Clase</remplazar> entrada<remplazar>Clase</remplazar>)
+	{
+		
+	}
+	
+	public void modificacion(<remplazar>Clase</remplazar> entrada<remplazar>Clase</remplazar>)
+	{
+		
+	}
+}

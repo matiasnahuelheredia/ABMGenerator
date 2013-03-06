@@ -1,0 +1,37 @@
+package <remplazar>PaqueteServicio</remplazar>;
+import java.util.ArrayList;
+import <remplazar>PaqueteRepositorio</remplazar>.Repo<remplazar>Clase</remplazar>;
+import <remplazar>PaqueteDominio</remplazar>.<remplazar>Clase</remplazar>;
+public class Serv<remplazar>Clase</remplazar> {
+
+	public ArrayList<<remplazar>Clase</remplazar>> getAll()
+	{
+		Repo<remplazar>Clase</remplazar> repo<remplazar>Clase</remplazar> = new Repo<remplazar>Clase</remplazar>();
+		return repo<remplazar>Clase</remplazar>.getAll();
+	}
+
+	public <remplazar>Clase</remplazar> getById(<remplazar>Clase</remplazar> entrada<remplazar>Clase</remplazar>)
+	{
+	    Repo<remplazar>Clase</remplazar> repo<remplazar>Clase</remplazar> = new Repo<remplazar>Clase</remplazar>();
+		return repo<remplazar>Clase</remplazar>.getById(entrada<remplazar>Clase</remplazar>);	
+		
+	}
+
+	public void baja(<remplazar>Clase</remplazar> entrada<remplazar>Clase</remplazar>)
+	{
+			Repo<remplazar>Clase</remplazar> repo<remplazar>Clase</remplazar> = new Repo<remplazar>Clase</remplazar>();
+		repo<remplazar>Clase</remplazar>.baja(entrada<remplazar>Clase</remplazar>);
+	}
+	
+	public void alta(<remplazar>Clase</remplazar> entrada<remplazar>Clase</remplazar>)
+	{
+		Repo<remplazar>Clase</remplazar> repo<remplazar>Clase</remplazar> = new Repo<remplazar>Clase</remplazar>();
+		repo<remplazar>Clase</remplazar>.alta(entrada<remplazar>Clase</remplazar>);
+	}
+	
+	public void modificacion(<remplazar>Clase</remplazar> entrada<remplazar>Clase</remplazar>)
+	{
+		Repo<remplazar>Clase</remplazar> repo<remplazar>Clase</remplazar> = new Repo<remplazar>Clase</remplazar>();
+		repo<remplazar>Clase</remplazar>.modificacion(entrada<remplazar>Clase</remplazar>);
+	}
+}
