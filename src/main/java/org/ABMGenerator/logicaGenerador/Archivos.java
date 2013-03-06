@@ -9,7 +9,7 @@ public class Archivos {
       public static String verHojaEstiloDominio()
       {
     	  String retorno="";
-    	  File archivo = new File(ObtecionDeRutas.obtenerRutaPackageHojaEstiloRepositorio()+"HojaEstiloRepo.txt"); 
+    	  File archivo = new File(ObtecionDeRutas.obtenerRutaPackageHojaEstiloRepositorio()+"/HojaEstiloRepo.txt"); 
     	  try {
 			FileReader reader = new FileReader(archivo);
 			BufferedReader br = new BufferedReader(reader);
@@ -25,10 +25,10 @@ public class Archivos {
     	  return retorno;
       }
 	  
-      
+     
       public static String[] obtenerArchivosDominio()
       {
-    	  File miDir = new File ("/home/mati89/workspace/ABMGenerator/src/main/java/org/ABMGenerator/Dominio/");
+    	  File miDir = new File (ObtecionDeRutas.obtenerRutaAbsolutaDominio());
           
 			
 			String[] Archivos =miDir.list();

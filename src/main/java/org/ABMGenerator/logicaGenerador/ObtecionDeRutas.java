@@ -1,5 +1,9 @@
 package org.ABMGenerator.logicaGenerador;
 
+import java.io.File;
+
+import org.hibernate.metamodel.domain.Superclass;
+
 public class ObtecionDeRutas {
 	
 	public static String obtenerRutaPackagePrincipal()
@@ -35,11 +39,20 @@ public class ObtecionDeRutas {
 	{
 		return obtenerRutaPackagePrincipal()+".Servicio";
 	}
-	
+	public static String obtenerRutaAbsolutaRepositorio()
+	{
+		File miDir = new File("src/main/java/org/ABMGenerator/Repositorio/");	
+		return miDir.getAbsolutePath();
+	}
+	public static String obtenerRutaAbsolutaDominio()
+	{
+		File miDir = new File("src/main/java/org/ABMGenerator/Dominio/");	
+		return miDir.getAbsolutePath();
+	}
 	public static String obtenerRutaPackageHojaEstiloRepositorio()
 	{
 		
-
-		return "/home/mati89/workspace/ABMGenerator/src/main/java/org/ABMGenerator/HolaEstilo/Repositorio/";
+		File miDir = new File("src/main/java/org/ABMGenerator/HojaEstilo/Repositorio/");	
+		return miDir.getAbsolutePath();
 	}
 }
