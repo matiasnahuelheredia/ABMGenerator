@@ -44,6 +44,11 @@ public class ObtecionDeRutas {
 		File miDir = new File("src/main/java/org/ABMGenerator/Repositorio/");	
 		return miDir.getAbsolutePath();
 	}
+	public static String obtenerRutaAbsolutaServicio()
+	{
+		File miDir = new File("src/main/java/org/ABMGenerator/Servicio/");	
+		return miDir.getAbsolutePath();
+	}
 	public static String obtenerRutaAbsolutaDominio()
 	{
 		File miDir = new File("src/main/java/org/ABMGenerator/Dominio/");	
@@ -55,4 +60,5 @@ public class ObtecionDeRutas {
 		File miDir = new File("src/main/java/org/ABMGenerator/HojaEstilo/Repositorio/");	
 		return miDir.getAbsolutePath();
 	}
+	
 }

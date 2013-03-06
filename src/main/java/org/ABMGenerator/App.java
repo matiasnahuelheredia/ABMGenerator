@@ -1,6 +1,7 @@
 package org.ABMGenerator;
 
 import org.ABMGenerator.logicaGenerador.GeneradorRepositorio;
+import org.ABMGenerator.logicaGenerador.GeneradorServicio;
 
 
 /**
@@ -14,6 +15,7 @@ public class App
         try
         {
         GeneradorRepositorio.GenerarArchivoPuntoJava();
+        GeneradorServicio.GenerarArchivoPuntoJava();
         System.out.println("se ha generado el codigo del repositorio");
         System.out.println("Actualize para poder verlo correctamente");
         }

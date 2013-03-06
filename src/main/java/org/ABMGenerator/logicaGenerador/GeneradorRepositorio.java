@@ -13,7 +13,7 @@ public class GeneradorRepositorio {
 	
 	public static String generarCodigo(String nombreClase) throws ClassNotFoundException
 	{
-		String Codigo = Archivos.verHojaEstiloDominio();
+		String Codigo = Archivos.verHojaEstiloRepositorio();
 		
 		Codigo = Codigo.replaceAll("<remplazar>PaqueteRepositorio</remplazar>", ObtecionDeRutas.obtenerRutaPackageRepositorio() );
 		Codigo = Codigo.replaceAll("<remplazar>PaqueteDominio</remplazar>", ObtecionDeRutas.obtenerRutaPackageDominio() );
