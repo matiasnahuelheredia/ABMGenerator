@@ -1,7 +1,13 @@
 package org.ABMGenerator.Dominio;
 
-public class Alumno {
+import java.io.Serializable;
 
+public class Alumno implements Serializable {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private int legajo;
     private String nombre;
     private String apellido;
