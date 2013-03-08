@@ -4,12 +4,25 @@ import <remplazar>PaqueteRepositorio</remplazar>.Repo<remplazar>Clase</remplazar
 import <remplazar>PaqueteDominio</remplazar>.<remplazar>Clase</remplazar>;
 public class Serv<remplazar>Clase</remplazar> {
 
+     /**
+     * obtiene una lista con todos los objetos de
+     * <remplazar>Clase</remplazar> existentes en la base
+     * de datos 
+     * @return retorna todos los <remplazar>Clase</remplazar>
+     */
 	public ArrayList<<remplazar>Clase</remplazar>> getAll()
 	{
 		Repo<remplazar>Clase</remplazar> repo<remplazar>Clase</remplazar> = new Repo<remplazar>Clase</remplazar>();
 		return repo<remplazar>Clase</remplazar>.getAll();
 	}
 
+     /**
+	 * 
+	 * @param entrada<remplazar>Clase</remplazar> deve contener un  <remplazar>Clase</remplazar>
+	 * con un Id que exista en la base de datos
+	 * @return <remplazar>Clase</remplazar> existente en la base de datos
+	 */
+	 
 	public <remplazar>Clase</remplazar> getById(<remplazar>Clase</remplazar> entrada<remplazar>Clase</remplazar>)
 	{
 	    Repo<remplazar>Clase</remplazar> repo<remplazar>Clase</remplazar> = new Repo<remplazar>Clase</remplazar>();
