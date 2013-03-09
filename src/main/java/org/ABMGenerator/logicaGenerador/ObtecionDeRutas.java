@@ -60,5 +60,10 @@ public class ObtecionDeRutas {
 		File miDir = new File("src/main/java/org/ABMGenerator/HojaEstilo/Repositorio/");	
 		return miDir.getAbsolutePath();
 	}
-	
+	public static String obtenerRutaPackageHojaEstiloServicio()
+	{
+		
+		File miDir = new File("src/main/java/org/ABMGenerator/HojaEstilo/Servicio/");	
+		return miDir.getAbsolutePath();
+	}
 }

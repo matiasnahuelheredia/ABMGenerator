@@ -30,18 +30,33 @@ public class Serv<remplazar>Clase</remplazar> {
 		
 	}
 
+    /**
+	 * Elimina un <remplazar>Clase</remplazar> existente en la base de datos
+	 * @param entrada<remplazar>Clase</remplazar> debe contener un <remplazar>Clase</remplazar>
+	 * con un Id que exista en la base de datos y se pueda eliminar
+	 */
+    
 	public void baja(<remplazar>Clase</remplazar> entrada<remplazar>Clase</remplazar>)
 	{
 			Repo<remplazar>Clase</remplazar> repo<remplazar>Clase</remplazar> = new Repo<remplazar>Clase</remplazar>();
 		repo<remplazar>Clase</remplazar>.baja(entrada<remplazar>Clase</remplazar>);
 	}
+	/**
+	 * almacena un <remplazar>Clase</remplazar> en base de datos
+	 * @param entrada<remplazar>Clase</remplazar> debe contener el <remplazar>Clase</remplazar>
+	 * que se va a almacenar en la base de datos
+	 */
 	
 	public void alta(<remplazar>Clase</remplazar> entrada<remplazar>Clase</remplazar>)
 	{
 		Repo<remplazar>Clase</remplazar> repo<remplazar>Clase</remplazar> = new Repo<remplazar>Clase</remplazar>();
 		repo<remplazar>Clase</remplazar>.alta(entrada<remplazar>Clase</remplazar>);
 	}
-	
+	/**
+	 * modifica un <remplazar>Clase</remplazar> existente en la base de datos
+	 * @param entrada<remplazar>Clase</remplazar> debe contener el <remplazar>Clase</remplazar>
+	 * que se va a modificar por la clave principal en la base de datos
+	 */
 	public void modificacion(<remplazar>Clase</remplazar> entrada<remplazar>Clase</remplazar>)
 	{
 		Repo<remplazar>Clase</remplazar> repo<remplazar>Clase</remplazar> = new Repo<remplazar>Clase</remplazar>();

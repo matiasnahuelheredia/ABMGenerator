@@ -28,7 +28,7 @@ public class Archivos {
       public static String verHojaEstiloServicio()
       {
     	  String retorno="";
-    	  File archivo = new File(ObtecionDeRutas.obtenerRutaPackageHojaEstiloRepositorio()+"/HojaEstiloServ.txt"); 
+    	  File archivo = new File(ObtecionDeRutas.obtenerRutaPackageHojaEstiloServicio()+"/HojaEstiloServ.txt"); 
     	  try {
 			FileReader reader = new FileReader(archivo);
 			BufferedReader br = new BufferedReader(reader);
